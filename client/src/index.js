@@ -16,6 +16,7 @@ async function getStore(type) {
   return store;
 }
 
+
 // Deletes a name from the store
 async function deleteName(button) {
   // Get the parent .name-wrap div of the button
@@ -28,6 +29,7 @@ async function deleteName(button) {
 
   wrap.remove();
 }
+
 
 // Updates a name in the store
 async function updateName(e) {
@@ -55,6 +57,7 @@ async function updateName(e) {
   }
 }
 
+
 // Gets all names from the store
 async function getNames() {
   const store = await getStore('readonly');
@@ -72,6 +75,7 @@ async function getNames() {
     `);
   })
 }
+
 
 // Adds a name to the store
 async function addName(eventObj) {
@@ -93,6 +97,7 @@ async function addName(eventObj) {
     console.log(err);
   }
 }
+
 
 // Initializes the app
 async function allSystemsGo() {
